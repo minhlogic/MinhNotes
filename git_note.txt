@@ -1,0 +1,61 @@
+
+https://git-scm.com/docs
+
+================================================================
+Delete branch:
+https://git-scm.com/docs/git-branch
+----------------------------------------------------------------
+git push origin --delete <branch>
+git branch --delete --remotes <remote>/<branch>
+
+git branch --delete <branch>
+git branch -d <branch> # Shorter version
+git branch -D <branch> # Force delete un-merged branches
+================================================================
+
+
+git checkout -b myBranch origin/master
+
+git checkout -b emailTemplate origin/master
+
+Create a local branch off of master.
+   git checkout -b myBranch origin/master
+Commit and build changes locally. For e.g.
+   git add *.java
+   git commit –m “Adding my new files.”
+
+Push local branch to origin.
+Get latest from master:
+   git pull
+
+Build locally.
+   git push origin myBranch
+
+Go to https://ewegithub.sb.karmalab.net/EWE/marketplace-service
+Create pull request from myBranch into master.
+Send out the pull request for code review.
+Code reviewer:
+Reviews the code and merges the pull request into master.
+Deletes myBranch in origin.
+
+
+---------------------------------------------------------------
+==> git rebase master
+First, rewinding head to replay your work on top of it...
+Applying: Revise test case for new hotelIdList
+Using index info to reconstruct a base tree...
+M	src/main/java/com/expedia/hotelinfosite/HotelInformationPage.java
+M	src/test/java/com/expedia/hotelInfosite/HotelInformationNewUnitTest.java
+Falling back to patching base and 3-way merge...
+Auto-merging src/test/java/com/expedia/hotelInfosite/HotelInformationNewUnitTest.java
+CONFLICT (content): Merge conflict in src/test/java/com/expedia/hotelInfosite/HotelInformationNewUnitTest.java
+Failed to merge in the changes.
+Patch failed at 0001 Revise test case for new hotelIdList
+The copy of the patch that failed is found in:
+   /Users/minhnguyen/Documents/workspace/Expedia/git/Exp-ui-auto/exp-ui-auto/.git/rebase-apply/patch
+
+When you have resolved this problem, run "git rebase --continue".
+If you prefer to skip this patch, run "git rebase --skip" instead.
+To check out the original branch and stop rebasing, run "git rebase --abort".
+
+----------------------------------------------------------------
