@@ -59,3 +59,5 @@ If you prefer to skip this patch, run "git rebase --skip" instead.
 To check out the original branch and stop rebasing, run "git rebase --abort".
 
 ----------------------------------------------------------------
+
+https://github.com/minhlogic/MinhNotes/blob/master/git_note.txt
